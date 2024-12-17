@@ -1,7 +1,7 @@
 // Checks if string is email.
 bool isValidEmail(String? inputString, {bool isRequired = false}) {
   bool isInputStringValid = false;
-  if ((isRequired && (inputString == null ? true : inputString.isEmpty)) {
+  if (isRequired && (inputString == null ? true : inputString.isEmpty)) {
     isInputStringValid = true;
   }
   if (inputString != null && inputString.isNotEmpty) {
@@ -22,7 +22,7 @@ bool isValidEmail(String? inputString, {bool isRequired = false}) {
 // no white space allowed
 bool isValidPassword(String? inputString, {bool isRequired = false}) {
   bool isInputStringValid = false;
-  if ((isRequired && (inputString == null ? true : inputString.isEmpty)) {
+  if (isRequired && (inputString == null ? true : inputString.isEmpty)) {
     isInputStringValid = true;
   }
   if (inputString != null && inputString.isNotEmpty) {
@@ -37,7 +37,7 @@ bool isValidPassword(String? inputString, {bool isRequired = false}) {
 // Checks if string consist only Alphabet. (No Whitespace)
 bool isText(String? inputString, {bool isRequired = false}) {
   bool isInputStringValid = false;
-  if ((isRequired && (inputString == null ? true : inputString.isEmpty)) {
+  if (isRequired && (inputString == null ? true : inputString.isEmpty)) {
     isInputStringValid = true;
   }
   if (inputString != null && inputString.isNotEmpty) {
