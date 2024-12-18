@@ -83,7 +83,7 @@ class CustomCheckboxButton extends StatelessWidget {
         text ?? "",
         textAlign: textAlignment ?? TextAlign.start,
         overflow: overflow,
-        style: textStyle ?? CustomTextStyles.bodySmall10ErrorContainer,
+        style: textStyle ?? CustomTextStyles.bodySmallOnErrorContainer_1,
       );
 
   Widget get checkboxWidget => SizedBox(
@@ -92,7 +92,7 @@ class CustomCheckboxButton extends StatelessWidget {
         child: Checkbox(
           visualDensity: VisualDensity(vertical: -4, horizontal: -4),
           value: value ?? false,
-          checkColor: Theme.of(context).colorScheme.primary,
+          checkColor: theme.colorScheme.primary,
           activeColor: appTheme.gray30001,
           side: MaterialStateBorderSide.resolveWith(
             (states) => BorderSide(

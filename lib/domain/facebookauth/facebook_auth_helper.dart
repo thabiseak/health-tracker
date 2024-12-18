@@ -11,7 +11,7 @@ class FacebookAuthHelper {
   /// Handle Facebook SignIn to authenticate user
   Future<FacebookUser> facebookSignInProcess() async {
     final facebookLogin = FacebookLogin();
-    final facebookLoginResult = await facebookLogin.login(permissions: [
+    final facebookLoginResult = await facebookLogin.logIn(permissions: [
       FacebookPermission.publicProfile,
       FacebookPermission.email
     ]);

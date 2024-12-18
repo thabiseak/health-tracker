@@ -28,14 +28,14 @@ class MyApp extends StatelessWidget {
           child: BlocBuilder<ThemeBloc, ThemeState>(
             builder: (context, state) {
               return MaterialApp(
-                theme: state.theme,
+                theme: theme,
                 title: 'health_tracker',
                 builder: (context, child) {
                   return MediaQuery(
                     data: MediaQuery.of(context).copyWith(
                       textScaler: TextScaler.linear(1.0),
                     ),
-                    child: child,
+                    child: child!,
                   );
                 },
                 navigatorKey: NavigatorService.navigatorKey,
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
                   Locale(
                     'en',
                     '',
-                    ,
+                  )
                 ],
                 initialRoute: AppRoutes.initialRoute,
                 routes: AppRoutes.routes,

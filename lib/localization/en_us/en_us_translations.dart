@@ -24,12 +24,12 @@ final Map<String, String> enUs = {
   "msg_already_have_an2": "Already have an account?",
   "msg_by_signing_up_you": "By signing up, you agree to our Terms & Conditions and Privacy Policy.",
   "msg_confirm_password": "Confirm Password",
-  "msg_confirm_your_password": "Confirm your password"
+  "msg_confirm_your_password": "Confirm your password",
   "msg_create_a_password": "Create a password",
-"msg_create_an_account": "Create an account to access all the features.",
-"msg_create_your_account": "Create Your Account",
-"msg_enter_your_full": "Enter your full name",
-"msg_join_us_and_start": "Join Us and Start Your Journey",
+  "msg_create_an_account": "Create an account to access all the features.",
+  "msg_create_your_account": "Create Your Account",
+  "msg_enter_your_full": "Enter your full name",
+  "msg_join_us_and_start": "Join Us and Start Your Journey",
 
 // About Screen
 "lbl_18_40": "18 - 40",
@@ -51,7 +51,7 @@ final Map<String, String> enUs = {
 "lbl_hi_anchana": "Hi! Anchana...",
 "msg_how_many_days_you": "How many days you plan to workout?",
 "msg_how_much_hours_you": "How much hours you can spent for a day?",
-"msg_what_is_your_prefer": "What is your prefer weight to reduce?"
+"msg_what_is_your_prefer": "What is your prefer weight to reduce?",
 
 // Daily plan Screen
 "lbl_avoid_fast_food": "Avoid fast food",
@@ -80,7 +80,6 @@ final Map<String, String> enUs = {
 "lbl_krishna_ram": "Krishna Ram",
 "lbl_notifications": "Notifications",
 "lbl_personal": "Personal",
-"lbl_profile": "Profile"
 "lbl_profile": "Profile",
 "lbl_setting": "Setting",
 "lbl_time": "Time",

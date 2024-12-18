@@ -172,3 +172,22 @@ class AppNavigationScreen extends StatelessWidget {
     NavigationService.pushNamed(routeName);
   }
 }
+
+class AppRoutes {
+  static String welcomeScreen = '/welcome';
+  static String loginScreen = '/login';
+  static String signupScreen = '/signup';
+  static String aboutScreen = '/about';
+  static String deatilsScreen = '/details';
+  static String dailyPlanScreen = '/daily-plan';
+  static String progressScreen = '/progress';
+  static String profileScreen = '/profile';
+}
+
+class NavigationService {
+  static void pushNamed(String routeName) {}
+}
+
+extension on int {
+  get fSize => null;
+}

@@ -4,6 +4,7 @@ import '../../theme/custom_button_style.dart';
 import '../../widgets/custom_elevated_button.dart';
 import 'bloc/welcome_bloc.dart';
 import 'models/welcome_model.dart';
+import '../../routes/app_routes.dart'; // Ensure this import is correct and points to the file where AppRoutes is defined
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
