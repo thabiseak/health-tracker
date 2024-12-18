@@ -68,7 +68,7 @@ class AppDecoration {
           end: Alignment(0.5, 1.0),
           colors: [
             appTheme.red900,
-            appTheme.graySee,
+            appTheme.gray900,
             appTheme.black900,
           ],
         ),

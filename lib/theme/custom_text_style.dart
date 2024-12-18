@@ -23,17 +23,17 @@ class CustomTextStyles {
   static TextStyle get bodyLargeRobotoOnErrorContainer =>
       theme.textTheme.bodyLarge!.roboto.copyWith(
         color: theme.colorScheme.onErrorContainer,
-        fontSize: 18.fSize,
+        fontSize: 18.0,
       );
 
   static TextStyle get bodyMediumRoboto => theme.textTheme.bodyMedium!.roboto.copyWith(
-        fontSize: 15.fSize,
+        fontSize: 15.0,
         fontWeight: FontWeight.w300,
       );
 
   static TextStyle get bodyMediumRobotoWhiteA70001 => theme.textTheme.bodyMedium!.roboto.copyWith(
         color: appTheme.whiteA70001,
-        fontSize: 15.fSize,
+        fontSize: 15.0,
         fontWeight: FontWeight.w300,
       );
 
@@ -66,7 +66,7 @@ class CustomTextStyles {
 
   static TextStyle get headlineSmallOnErrorContainer => theme.textTheme.headlineSmall!.copyWith(
         color: theme.colorScheme.onErrorContainer,
-        fontSize: 24.fSize,
+        fontSize: 24.0,
         fontWeight: FontWeight.w600,
       );
 

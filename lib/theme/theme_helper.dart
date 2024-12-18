@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './core/app_export.dart';
+import '../core/app_export.dart';
 
 LightCodeColors get appTheme => ThemeHelper().themeColor();
 ThemeData get theme => ThemeHelper().themeData();
@@ -43,7 +43,6 @@ class ThemeHelper {
           visualDensity: const VisualDensity(vertical: -4, horizontal: -4),
         ),
       ),
-      padding: EdgeInsets.zero,
       radioTheme: RadioThemeData(
         fillColor: MaterialStateColor.resolveWith((states) {
           if (states.contains(MaterialState.selected)) {
@@ -86,73 +85,73 @@ class TextThemes {
   static TextTheme textTheme(ColorScheme colorScheme) => TextTheme(
         bodyLarge: TextStyle(
           color: appTheme.gray200,
-          fontSize: 16.fSize,
+          fontSize: 16.0,
           fontFamily: 'Lato',
           fontWeight: FontWeight.w400,
         ),
         bodyMedium: TextStyle(
           color: colorScheme.onErrorContainer,
-          fontSize: 14.fSize,
+          fontSize: 14.0,
           fontFamily: 'Lato',
           fontWeight: FontWeight.w400,
         ),
         bodySmall: TextStyle(
           color: appTheme.black900.withOpacity(0.8),
-          fontSize: 12.fSize,
+          fontSize: 12.0,
           fontFamily: 'Lato',
           fontWeight: FontWeight.w400,
         ),
         displayMedium: TextStyle(
           color: colorScheme.onErrorContainer,
-          fontSize: 40.fSize,
+          fontSize: 40.0,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w200,
         ),
         displaySmall: TextStyle(
           color: colorScheme.primary,
-          fontSize: 35.fSize,
+          fontSize: 35.0,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w700,
         ),
         headlineLarge: TextStyle(
           color: colorScheme.onErrorContainer,
-          fontSize: 32.fSize,
+          fontSize: 32.0,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w700,
         ),
         headlineMedium: TextStyle(
           color: colorScheme.onErrorContainer,
-          fontSize: 28.fSize,
+          fontSize: 28.0,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w700,
         ),
         headlineSmall: TextStyle(
           color: colorScheme.primary,
-          fontSize: 25.fSize,
+          fontSize: 25.0,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w800,
         ),
         labelLarge: TextStyle(
           color: colorScheme.onErrorContainer,
-          fontSize: 12.fSize,
+          fontSize: 12.0,
           fontFamily: 'Lato',
           fontWeight: FontWeight.w800,
         ),
         titleLarge: TextStyle(
           color: colorScheme.onErrorContainer,
-          fontSize: 20.fSize,
+          fontSize: 20.0,
           fontFamily: 'Lato',
           fontWeight: FontWeight.w400,
         ),
         titleMedium: TextStyle(
           color: appTheme.gray200,
-          fontSize: 16.fSize,
+          fontSize: 16.0,
           fontFamily: 'Lato',
           fontWeight: FontWeight.w700,
         ),
         titleSmall: TextStyle(
           color: colorScheme.onErrorContainer,
-          fontSize: 15.fSize,
+          fontSize: 15.0,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w700,
         ),
