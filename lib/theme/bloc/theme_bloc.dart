@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:equatable/equatable.dart';
 import '/core/app_export.dart';
 part 'theme_event.dart';

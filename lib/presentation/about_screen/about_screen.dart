@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_grid_list/responsive_grid_list.dart';
 import '../../core/app_export.dart';
-import '../../theme/custom_button_style.dart';
-import '../../widgets/custom_elevated_button.dart';
-import '../../widgets/custom_radio_button.dart';
-import '../../widgets/custom_text_form_field.dart';
 import 'bloc/about_bloc.dart';
 import 'models/about_model.dart';
-import 'models/agecategories_item_model.dart';
-import 'widgets/agecategories_item_widget.dart';
 
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({Key? key}) : super(key: key);

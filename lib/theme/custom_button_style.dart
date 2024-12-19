@@ -5,10 +5,10 @@ import '../core/app_export.dart';
 class CustomButtonStyles {
   // Text button style
   static ButtonStyle get none => ButtonStyle(
-        backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
-        elevation: MaterialStateProperty.all<double>(0),
-        padding: MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.zero),
-        side: MaterialStateProperty.all<BorderSide>(
+        backgroundColor: WidgetStateProperty.all<Color>(Colors.transparent),
+        elevation: WidgetStateProperty.all<double>(0),
+        padding: WidgetStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.zero),
+        side: WidgetStateProperty.all<BorderSide>(
           BorderSide(color: Colors.transparent),
         ),
       );
