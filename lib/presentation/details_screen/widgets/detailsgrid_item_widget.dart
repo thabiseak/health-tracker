@@ -4,7 +4,8 @@ import '../models/detailsgrid_item_model.dart';
 
 // ignore_for_file: must_be_immutable
 class DetailsgridItemWidget extends StatelessWidget {
-  DetailsgridItemWidget(this.detailsgridItemModelObj, {Key? key}) : super(key: key);
+  DetailsgridItemWidget(this.detailsgridItemModelObj, {Key? key})
+      : super(key: key);
 
   DetailsgridItemModel detailsgridItemModelObj;
 

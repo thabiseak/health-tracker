@@ -29,7 +29,7 @@ class BaseButton extends StatelessWidget {
   final double? width;
 
   final EdgeInsets? margin;
-  
+
   final Alignment? alignment;
 
   @override

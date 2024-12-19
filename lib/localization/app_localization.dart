@@ -17,12 +17,12 @@ class AppLocalization {
 
   static AppLocalization of() {
     return Localizations.of<AppLocalization>(
-      NavigatorService.navigatorKey.currentContext!, AppLocalization)!;
+        NavigatorService.navigatorKey.currentContext!, AppLocalization)!;
   }
 
   static List<String> languages() => _localizedValues.keys.toList();
   String getString(String text) =>
-    _localizedValues[locale.languageCode]![text] ?? text;
+      _localizedValues[locale.languageCode]![text] ?? text;
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalization> {
@@ -30,7 +30,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalization> {
 
   @override
   bool isSupported(Locale locale) =>
-    AppLocalization.languages().contains(locale.languageCode);
+      AppLocalization.languages().contains(locale.languageCode);
   // Returning a synchronous future here because an async "load" operation
   // cause an async "load" operation
   @override

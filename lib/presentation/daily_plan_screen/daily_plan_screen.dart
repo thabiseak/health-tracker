@@ -99,7 +99,9 @@ class DailyPlanScreen extends StatelessWidget {
               return CustomSwitch(
                 value: isSelectedSwitch ?? false,
                 onChange: (value) {
-                  context.read<DailyPlanBloc>().add(ChangeSwitchEvent(value: value));
+                  context
+                      .read<DailyPlanBloc>()
+                      .add(ChangeSwitchEvent(value: value));
                 },
               );
             },

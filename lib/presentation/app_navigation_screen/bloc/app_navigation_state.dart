@@ -12,7 +12,8 @@ class AppNavigationState extends Equatable {
 
   AppNavigationState copyWith({AppNavigationModel? appNavigationModelObj}) {
     return AppNavigationState(
-      appNavigationModelObj: appNavigationModelObj ?? this.appNavigationModelObj,
+      appNavigationModelObj:
+          appNavigationModelObj ?? this.appNavigationModelObj,
     );
   }
 }

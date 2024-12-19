@@ -10,18 +10,18 @@ class ProgressDialogUtils {
     if (!isProgressVisible &&
         NavigatorService.navigatorKey.currentState?.overlay?.context != null) {
       showDialog(
-        barrierDismissible: isCancellable,
-        context: NavigatorService.navigatorKey.currentState!.overlay!.context,
-        builder: (BuildContext context) {
-          return Center(
-            child: CircularProgressIndicator.adaptive(
-              strokeWidth: 4,
-              valueColor: AlwaysStoppedAnimation<Color>(
-                Colors.white,
+          barrierDismissible: isCancellable,
+          context: NavigatorService.navigatorKey.currentState!.overlay!.context,
+          builder: (BuildContext context) {
+            return Center(
+              child: CircularProgressIndicator.adaptive(
+                strokeWidth: 4,
+                valueColor: AlwaysStoppedAnimation<Color>(
+                  Colors.white,
+                ),
               ),
-            ),
-          );
-        });
+            );
+          });
       isProgressVisible = true;
     }
   }
@@ -30,7 +30,7 @@ class ProgressDialogUtils {
   static void hideProgressDialog() {
     if (isProgressVisible)
       Navigator.pop(
-        NavigatorService.navigatorKey.currentState!.overlay!.context);
+          NavigatorService.navigatorKey.currentState!.overlay!.context);
     isProgressVisible = false;
   }
 }

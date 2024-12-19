@@ -13,11 +13,11 @@ class AboutModel extends Equatable {
 
   AboutModel copyWith({List<AgecategoriesItemModel>? agecategoriesItemList}) {
     return AboutModel(
-      agecategoriesItemList: agecategoriesItemList ?? this.agecategoriesItemList,
+      agecategoriesItemList:
+          agecategoriesItemList ?? this.agecategoriesItemList,
     );
   }
 
   @override
   List<Object?> get props => [agecategoriesItemList];
 }
-

@@ -4,10 +4,10 @@ import 'package:equatable/equatable.dart';
 
 // ignore_for_file: must_be_immutable
 class DetailsgridItemModel extends Equatable {
-  DetailsgridItemModel({String? whatisyour, String? id}){
-       whatisyour = whatisyour ?? "What is your preferred weight to reduce?";
-        id = id ?? "";
-      }
+  DetailsgridItemModel({String? whatisyour, String? id}) {
+    whatisyour = whatisyour ?? "What is your preferred weight to reduce?";
+    id = id ?? "";
+  }
 
   String? whatisyour;
 

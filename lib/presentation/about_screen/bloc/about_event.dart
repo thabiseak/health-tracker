@@ -1,7 +1,7 @@
 part of 'about_bloc.dart';
 
 /// Abstract class for all events that can be dispatched from the About widget.
-/// 
+///
 /// Events must be immutable and implement the [Equatable] interface.
 abstract class AboutEvent extends Equatable {
   @override

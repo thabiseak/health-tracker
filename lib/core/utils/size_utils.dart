@@ -19,27 +19,26 @@ extension FormatExtension on double {
   double isNonZero({num defaultValue = 0.0}) {
     return this > 0 ? this : defaultValue.toDouble();
   }
-}  
+}
 
 enum DeviceType { mobile, tablet, desktop }
 
 typedef ResponsiveBuild = Widget Function(
-  BuildContext context, Orientation orientation, DeviceType deviceType);
+    BuildContext context, Orientation orientation, DeviceType deviceType);
 
 class Sizer extends StatelessWidget {
   const Sizer({Key? key, required this.builder}) : super(key: key);
-
 
   final ResponsiveBuild builder;
 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
-        return OrientationBuilder(builder: (context, orientation) {
-            SizeUtils.setScreenSize(constraints, orientation);
-            return builder(context, orientation, SizeUtils.deviceType);
-          });
+      return OrientationBuilder(builder: (context, orientation) {
+        SizeUtils.setScreenSize(constraints, orientation);
+        return builder(context, orientation, SizeUtils.deviceType);
       });
+    });
   }
 }
 
@@ -70,10 +69,12 @@ class SizeUtils {
     orientation = currentOrientation;
 
     if (orientation == Orientation.portrait) {
-      width = boxConstraints.maxWidth.isNonZero(defaultValue: FIGMA_DESIGN_WIDTH);
+      width =
+          boxConstraints.maxWidth.isNonZero(defaultValue: FIGMA_DESIGN_WIDTH);
       height = boxConstraints.maxHeight.isNonZero();
     } else {
-      width = boxConstraints.maxHeight.isNonZero(defaultValue: FIGMA_DESIGN_WIDTH);
+      width =
+          boxConstraints.maxHeight.isNonZero(defaultValue: FIGMA_DESIGN_WIDTH);
       height = boxConstraints.maxWidth.isNonZero();
     }
 

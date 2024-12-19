@@ -5,7 +5,7 @@ import 'package:health_tracker/main.dart';
 // For checking internet connectivity
 abstract class NetworkInfoI {
   Future<bool> isConnected();
-  
+
   Future<List<ConnectivityResult>> get connectivityResult;
 
   Stream<List<ConnectivityResult>> get onConnectivityChanged;
@@ -25,8 +25,8 @@ class NetworkInfo implements NetworkInfoI {
   }
 
   /// Checks if the internet is connected or not
-  /// Returns [true] if connected, 
-  /// otherwise [false] 
+  /// Returns [true] if connected,
+  /// otherwise [false]
   @override
   Future<bool> isConnected() async {
     final result = await connectivityResult;
@@ -45,11 +45,11 @@ class NetworkInfo implements NetworkInfoI {
       connectivity.onConnectivityChanged;
 }
 
-abstract class Failure{}
+abstract class Failure {}
 
 //General failure
 class ServerFailure implements Failure {}
- 
+
 class CacheFailure implements Failure {}
 
 class NetworkFailure implements Failure {}

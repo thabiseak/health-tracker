@@ -18,7 +18,8 @@ class Routes {
 
   static const String aboutScreen = '/about_screen';
 
-  static const String deatilsScreen = '/deatils_screen'; // (Consider renaming "deatils" to "details" in your project for clarity)
+  static const String deatilsScreen =
+      '/deatils_screen'; // (Consider renaming "deatils" to "details" in your project for clarity)
 
   static const String dailyPlanScreen = '/daily_plan_screen';
 
@@ -29,7 +30,7 @@ class Routes {
   static const String profileInitialPage = '/profile_initial_page';
 
   static const String appNavigationScreen = '/app_navigation_screen';
-  
+
   static const String initialRoute = '/welcome_screen';
 
   static Map<String, WidgetBuilder> get routes => {

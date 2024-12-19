@@ -74,6 +74,7 @@ class AppDecoration {
         ),
       );
 }
+
 class BorderRadiusStyle {
   // Circle borders
   static BorderRadius get circleBorder50 => BorderRadius.circular(

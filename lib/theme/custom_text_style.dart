@@ -26,12 +26,14 @@ class CustomTextStyles {
         fontSize: 18.0,
       );
 
-  static TextStyle get bodyMediumRoboto => theme.textTheme.bodyMedium!.roboto.copyWith(
+  static TextStyle get bodyMediumRoboto =>
+      theme.textTheme.bodyMedium!.roboto.copyWith(
         fontSize: 15.0,
         fontWeight: FontWeight.w300,
       );
 
-  static TextStyle get bodyMediumRobotoWhiteA70001 => theme.textTheme.bodyMedium!.roboto.copyWith(
+  static TextStyle get bodyMediumRobotoWhiteA70001 =>
+      theme.textTheme.bodyMedium!.roboto.copyWith(
         color: appTheme.whiteA70001,
         fontSize: 15.0,
         fontWeight: FontWeight.w300,
@@ -41,17 +43,20 @@ class CustomTextStyles {
         color: appTheme.gray200,
       );
 
-  static TextStyle get bodySmallGray200_1 => theme.textTheme.bodySmall!.copyWith(
+  static TextStyle get bodySmallGray200_1 =>
+      theme.textTheme.bodySmall!.copyWith(
         color: appTheme.gray200,
       );
 
   static TextStyle get bodySmallInter => theme.textTheme.bodySmall!.inter;
 
-  static TextStyle get bodySmallOnErrorContainer => theme.textTheme.bodySmall!.copyWith(
+  static TextStyle get bodySmallOnErrorContainer =>
+      theme.textTheme.bodySmall!.copyWith(
         color: theme.colorScheme.onErrorContainer,
       );
 
-  static TextStyle get bodySmallOnErrorContainer_1 => theme.textTheme.bodySmall!.copyWith(
+  static TextStyle get bodySmallOnErrorContainer_1 =>
+      theme.textTheme.bodySmall!.copyWith(
         color: theme.colorScheme.onErrorContainer,
       );
 
@@ -60,18 +65,21 @@ class CustomTextStyles {
       );
 
   // Headline text style
-  static TextStyle get headlineLargeExtraBold => theme.textTheme.headlineLarge!.copyWith(
+  static TextStyle get headlineLargeExtraBold =>
+      theme.textTheme.headlineLarge!.copyWith(
         fontWeight: FontWeight.w800,
       );
 
-  static TextStyle get headlineSmallOnErrorContainer => theme.textTheme.headlineSmall!.copyWith(
+  static TextStyle get headlineSmallOnErrorContainer =>
+      theme.textTheme.headlineSmall!.copyWith(
         color: theme.colorScheme.onErrorContainer,
         fontSize: 24.0,
         fontWeight: FontWeight.w600,
       );
 
   // Label text style
-  static TextStyle get labelLargeGray200 => theme.textTheme.labelLarge!.copyWith(
+  static TextStyle get labelLargeGray200 =>
+      theme.textTheme.labelLarge!.copyWith(
         color: appTheme.gray200,
       );
 
@@ -80,15 +88,18 @@ class CustomTextStyles {
         fontWeight: FontWeight.w700,
       );
 
-  static TextStyle get titleLargeRoboto => theme.textTheme.titleLarge!.roboto.copyWith(
+  static TextStyle get titleLargeRoboto =>
+      theme.textTheme.titleLarge!.roboto.copyWith(
         fontWeight: FontWeight.w800,
       );
 
-  static TextStyle get titleLargeRobotoBold => theme.textTheme.titleLarge!.roboto.copyWith(
+  static TextStyle get titleLargeRobotoBold =>
+      theme.textTheme.titleLarge!.roboto.copyWith(
         fontWeight: FontWeight.w700,
       );
 
-  static TextStyle get titleLargeWhiteA700 => theme.textTheme.titleLarge!.copyWith(
+  static TextStyle get titleLargeWhiteA700 =>
+      theme.textTheme.titleLarge!.copyWith(
         color: appTheme.whiteA700,
       );
 }

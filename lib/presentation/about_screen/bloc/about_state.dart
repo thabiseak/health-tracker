@@ -22,7 +22,7 @@ class AboutState extends Equatable {
   TextEditingController? weightInputController;
 
   AboutModel? aboutModelObj;
-  
+
   String radioGroup;
 
   @override
@@ -47,8 +47,10 @@ class AboutState extends Equatable {
       genderInputController:
           genderInputController ?? this.genderInputController,
       ageInputController: ageInputController ?? this.ageInputController,
-      heightInputController: heightInputController ?? this.heightInputController,
-      weightInputController: weightInputController ?? this.weightInputController,
+      heightInputController:
+          heightInputController ?? this.heightInputController,
+      weightInputController:
+          weightInputController ?? this.weightInputController,
       radioGroup: radioGroup ?? this.radioGroup,
       aboutModelObj: aboutModelObj ?? this.aboutModelObj,
     );

@@ -204,10 +204,8 @@ class LoginScreen extends StatelessWidget {
               obscureText: state.isShowPassword,
               suffix: InkWell(
                 onTap: () {
-                  context
-                      .read<LoginBloc>()
-                      .add(ChangePasswordVisibilityEvent(
-                          value: !state.isShowPassword));
+                  context.read<LoginBloc>().add(ChangePasswordVisibilityEvent(
+                      value: !state.isShowPassword));
                 },
                 child: CustomImageView(
                   imagePath: ImageConstant.imgEyeOff,

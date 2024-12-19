@@ -26,11 +26,11 @@ class NavigatorService {
         arguments: arguments);
   }
 
-static Future<dynamic> popAndPushNamed(
+  static Future<dynamic> popAndPushNamed(
     String routeName, {
     dynamic arguments,
-    }) async {
-    return navigatorKey.currentState?.popAndPushNamed(
-        routeName, arguments: arguments);
+  }) async {
+    return navigatorKey.currentState
+        ?.popAndPushNamed(routeName, arguments: arguments);
   }
 }

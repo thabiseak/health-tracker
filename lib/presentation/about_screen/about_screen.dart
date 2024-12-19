@@ -3,7 +3,6 @@ import '../../core/app_export.dart';
 import 'bloc/about_bloc.dart';
 import 'models/about_model.dart';
 
-
 class AboutScreen extends StatelessWidget {
   const AboutScreen({Key? key}) : super(key: key);
 
@@ -30,7 +29,8 @@ class AboutScreen extends StatelessWidget {
                   _buildNavigationArrows(context),
                   Container(
                     width: double.infinity,
-                    padding: EdgeInsets.symmetric(horizontal: 28.0, vertical: 38.0),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 28.0, vertical: 38.0),
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage(ImageConstant.imgGroup166),
@@ -151,7 +151,8 @@ class AboutScreen extends StatelessWidget {
             controller: genderInputController,
             decoration: InputDecoration(
               hintText: "lbl_gender".tr,
-              contentPadding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
+              contentPadding:
+                  EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
               filled: true,
               fillColor: Theme.of(context).colorScheme.primaryContainer,
             ),
@@ -171,7 +172,8 @@ class AboutScreen extends StatelessWidget {
             controller: ageInputController,
             decoration: InputDecoration(
               hintText: "lbl_age".tr,
-              contentPadding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
+              contentPadding:
+                  EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
               filled: true,
               fillColor: Theme.of(context).colorScheme.primaryContainer,
             ),
@@ -191,7 +193,8 @@ class AboutScreen extends StatelessWidget {
             controller: heightInputController,
             decoration: InputDecoration(
               hintText: "lbl_height".tr,
-              contentPadding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
+              contentPadding:
+                  EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
               filled: true,
               fillColor: Theme.of(context).colorScheme.primaryContainer,
             ),
@@ -211,7 +214,8 @@ class AboutScreen extends StatelessWidget {
             controller: weightInputController,
             decoration: InputDecoration(
               hintText: "lbl_weight".tr,
-              contentPadding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
+              contentPadding:
+                  EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
               filled: true,
               fillColor: Theme.of(context).colorScheme.primaryContainer,
             ),

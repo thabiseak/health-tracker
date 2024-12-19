@@ -14,7 +14,8 @@ class AboutBloc extends Bloc<AboutEvent, AboutState> {
     on<ChangeRadioButtonEvent>(_changeRadioButton);
   }
 
-  Future<void> _onInitialize(AboutInitialEvent event, Emitter<AboutState> emit) async {
+  Future<void> _onInitialize(
+      AboutInitialEvent event, Emitter<AboutState> emit) async {
     emit(
       state.copyWith(
         genderInputController: TextEditingController(),
@@ -29,7 +30,8 @@ class AboutBloc extends Bloc<AboutEvent, AboutState> {
     );
   }
 
-  void _changeRadioButton(ChangeRadioButtonEvent event, Emitter<AboutState> emit) {
+  void _changeRadioButton(
+      ChangeRadioButtonEvent event, Emitter<AboutState> emit) {
     emit(
       state.copyWith(
         radioGroup: event.value,

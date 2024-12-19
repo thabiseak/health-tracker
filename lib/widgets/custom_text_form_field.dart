@@ -78,7 +78,8 @@ class CustomTextFormField extends StatelessWidget {
         width: width ?? double.maxFinite,
         decoration: boxDecoration,
         child: TextFormField(
-          scrollPadding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+          scrollPadding:
+              EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
           controller: controller,
           focusNode: focusNode,
           onTapOutside: (event) {

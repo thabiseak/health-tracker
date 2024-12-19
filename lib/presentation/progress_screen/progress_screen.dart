@@ -10,8 +10,9 @@ class ProgressScreen extends StatelessWidget {
 
   static Widget builder(BuildContext context) {
     return BlocProvider<ProgressBloc>(
-      create: (context) => ProgressBloc(ProgressState(progressModelObj: ProgressModel()))
-        ..add(ProgressInitialEvent()),
+      create: (context) =>
+          ProgressBloc(ProgressState(progressModelObj: ProgressModel()))
+            ..add(ProgressInitialEvent()),
       child: ProgressScreen(),
     );
   }

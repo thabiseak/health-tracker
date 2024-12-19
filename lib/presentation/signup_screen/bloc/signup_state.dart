@@ -48,12 +48,11 @@ class SignupState extends Equatable {
     return SignupState(
       fullNameInputController:
           fullNameInputController ?? this.fullNameInputController,
-      emailInputController:
-          emailInputController ?? this.emailInputController,
+      emailInputController: emailInputController ?? this.emailInputController,
       passwordInputController:
           passwordInputController ?? this.passwordInputController,
-      confirmPasswordInputController: confirmPasswordInputController ??
-          this.confirmPasswordInputController,
+      confirmPasswordInputController:
+          confirmPasswordInputController ?? this.confirmPasswordInputController,
       isShowPassword: isShowPassword ?? this.isShowPassword,
       isShowPassword1: isShowPassword1 ?? this.isShowPassword1,
       bysigningupyoua: bysigningupyoua ?? this.bysigningupyoua,

@@ -15,8 +15,9 @@ class DetailsScreen extends StatelessWidget {
 
   static Widget builder(BuildContext context) {
     return BlocProvider<DeatilsBloc>(
-      create: (context) => DeatilsBloc(DetailsState(deatilsModelObj: DeatilsModel()))
-        ..add(DetailsInitialEvent()),
+      create: (context) =>
+          DeatilsBloc(DetailsState(deatilsModelObj: DeatilsModel()))
+            ..add(DetailsInitialEvent()),
       child: DetailsScreen(),
     );
   }
@@ -43,7 +44,8 @@ class DetailsScreen extends StatelessWidget {
               _buildStackSection(context),
               Container(
                 width: double.maxFinite,
-                padding: EdgeInsets.only(left: 24.h, right: 24.h, bottom: 114.h),
+                padding:
+                    EdgeInsets.only(left: 24.h, right: 24.h, bottom: 114.h),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -128,7 +130,9 @@ class DetailsScreen extends StatelessWidget {
           gridItems: List.generate(
             detailsModelObj?.detailsgridItemList.length ?? 0,
             (index) {
-              DetailsgridItemModel model = detailsModelObj?.detailsgridItemList[index] ?? DetailsgridItemModel();
+              DetailsgridItemModel model =
+                  detailsModelObj?.detailsgridItemList[index] ??
+                      DetailsgridItemModel();
               return DetailsgridItemWidget(model);
             },
           ),

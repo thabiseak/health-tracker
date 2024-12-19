@@ -11,8 +11,9 @@ class WelcomeScreen extends StatelessWidget {
 
   static Widget builder(BuildContext context) {
     return BlocProvider<WelcomeBloc>(
-      create: (context) => WelcomeBloc(WelcomeState(welcomeModelObj: WelcomeModel()))
-        ..add(WelcomeInitialEvent()),
+      create: (context) =>
+          WelcomeBloc(WelcomeState(welcomeModelObj: WelcomeModel()))
+            ..add(WelcomeInitialEvent()),
       child: const WelcomeScreen(),
     );
   }
@@ -76,7 +77,8 @@ class WelcomeScreen extends StatelessWidget {
                   height: 50.h,
                   text: "lbl_get_started".tr,
                   margin: EdgeInsets.only(left: 44.h, right: 42.h),
-                  buttonTextStyle: CustomTextStyles.headlineSmallOnErrorContainer,
+                  buttonTextStyle:
+                      CustomTextStyles.headlineSmallOnErrorContainer,
                   onPressed: () => onTapGetStarted(context),
                 ),
               ],
@@ -92,5 +94,3 @@ class WelcomeScreen extends StatelessWidget {
     NavigatorService.pushNamed(AppRoutes.loginScreen);
   }
 }
-
-

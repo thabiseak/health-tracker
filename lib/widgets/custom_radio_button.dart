@@ -43,7 +43,9 @@ class CustomRadioButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return alignment != null
-        ? Align(alignment: alignment ?? Alignment.center, child: buildRadioButtonWidget)
+        ? Align(
+            alignment: alignment ?? Alignment.center,
+            child: buildRadioButtonWidget)
         : buildRadioButtonWidget;
   }
 

@@ -12,7 +12,7 @@ class WelcomeBloc extends Bloc<WelcomeEvent, WelcomeState> {
   }
 
   /// Handles the initialization of the Welcome screen state.
-   _onInitialize(
+  _onInitialize(
     WelcomeInitialEvent event,
     Emitter<WelcomeState> emit,
   ) async {}
